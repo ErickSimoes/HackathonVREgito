@@ -5,10 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(MeshRenderer))]
 public class Point : MonoBehaviour
 {
-	public Material Normal;
-	public Material Hover;
-
-
 	MeshRenderer mr;
 
 	void Start ()
@@ -25,12 +21,12 @@ public class Point : MonoBehaviour
 	{
 		if (enter)
 		{
-			mr.material = Hover;
+			//mr.material = Hover;
 			transform.localScale = new Vector3(.7f, .7f, .7f);
 		}
 		else
 		{
-			mr.material = Normal;
+			//mr.material = Normal;
 			transform.localScale = new Vector3(.5f, .5f, .5f);
 		}
 	}
